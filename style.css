@@ -1,7 +1,7 @@
 #hitbox {
     position: absolute;
-    top: 1930px;
-    left: 1355px;
+    top: 4050px;
+    left: 2960px;
     min-width: 240px;
     min-height: 180px;
     z-index: 2;
@@ -9,22 +9,23 @@
 
 #hoodie {
     position: absolute;
-    top: 1930px;
-    left: 1355px;
+    top: 4050px;
+    left: 2960px;
     z-index: 0;
 }
 
 #hoodie.solved {
-    top: 100px;
+    top: 300px;
     left: 10px;
+    width: 600px;
 }
 
 #houses {
     position: absolute;
-    top: 100px;
+    top: 300px;
     left: 0px;
-    width: 2048px;
-    height: 2048px;
+    width: 4096px;
+    height: 4096px;
     z-index: 1;
     opacity: 1;
     transition: opacity 3s;
@@ -32,8 +33,8 @@
 
 #arrow {
     position: absolute;
-    top: 215px;
-    left: 87px;
+    top: 640px;
+    left: 265px;
     z-index: 2;
     width: 200px;
     height: 200px;
@@ -43,7 +44,15 @@
     display: block;
 }
 
+#text {
+    font-size: 50px;
+    margin-left: 20px;
+}
+
 h3 {
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 60px;
     color: #666666;
     font-family: 'Martel', serif;
 }
