@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <h3>Hidden</h3>
+    <div id="text">
+    Where is Peachu?
+    </div>
+</div>
+<div>
+    <img id="houses" src="houses.png"/>
+    <div id="hitbox"></div>
+    <img id="hoodie" src="hoodie.gif"/>
+    <img id="arrow" src="arrow.png"/>
+
+</div>
+</body>
+<script>
+    var hitbox = document.getElementById("hitbox")
+    hitbox.addEventListener('click', function () {
+        var houses = document.getElementById("houses")
+        houses.style.opacity = 0
+        setTimeout(() => {
+            houses.remove()
+            hitbox.remove()
+            document.getElementById("hoodie").classList.add('solved')
+            document.getElementById("arrow").classList.add('solved')
+            document.getElementById("text").textContent = 'Follow the arrow'
+        }, 5000)
+    })
+</script>
+</html>
